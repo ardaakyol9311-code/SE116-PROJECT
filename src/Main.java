@@ -1,2 +1,2 @@
-deniz deneme
-        ömer deneme
+public class Main {
+}
