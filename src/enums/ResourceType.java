@@ -1,4 +1,7 @@
 package enums;
 
-public class ResourceType {
+public enum ResourceType {
+    POPULATION,
+    GOODS,
+    LIFESTYLE
 }

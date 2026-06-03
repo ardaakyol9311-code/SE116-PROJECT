@@ -1,4 +1,7 @@
 package enums;
 
-public class ServiceType {
+public enum ServiceType {
+    SECURITY,
+    HEALTH,
+    EDUCATION
 }

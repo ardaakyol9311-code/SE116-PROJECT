@@ -1,4 +1,7 @@
 package enums;
 
-public class UtilityType {
+public enum UtilityType {
+    ELECTRICITY,
+    WATER,
+    INTERNET
 }
