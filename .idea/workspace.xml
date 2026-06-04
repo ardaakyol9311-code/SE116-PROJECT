@@ -1,14 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8a5e08d2-eb9e-4a68-8cad-39eefdfef34a" name="Changes" comment="we entered types">
-      <change beforePath="$PROJECT_DIR$/src/cells/Cell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cells/Cell.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cells/EmptyCell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cells/EmptyCell.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cells/Hospital.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cells/Hospital.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cells/PoliceStation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cells/PoliceStation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cells/Road.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cells/Road.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cells/School.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cells/School.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cells/ServiceBuilding.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cells/ServiceBuilding.java" afterDir="false" />
+    <list default="true" id="8a5e08d2-eb9e-4a68-8cad-39eefdfef34a" name="Changes" comment="We created ServiceBuilding and Cell which are abstract classes and also we use inheritance to extends from them">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SE116ConfigurationException.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,23 +44,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Unnamed.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "/home/deniz/Desktop/SE116-PROJECT/src/Main.java",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.0"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Unnamed.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;/home/deniz/Desktop/SE116-PROJECT/src/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
@@ -111,7 +106,15 @@
       <option name="project" value="LOCAL" />
       <updated>1780497326364</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="We created ServiceBuilding and Cell which are abstract classes and also we use inheritance to extends from them">
+      <option name="closed" value="true" />
+      <created>1780502317724</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1780502317724</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -120,6 +123,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Main Structure of ObjectVille" />
     <MESSAGE value="we entered types" />
-    <option name="LAST_COMMIT_MESSAGE" value="we entered types" />
+    <MESSAGE value="We created ServiceBuilding and Cell which are abstract classes and also we use inheritance to extends from them" />
+    <option name="LAST_COMMIT_MESSAGE" value="We created ServiceBuilding and Cell which are abstract classes and also we use inheritance to extends from them" />
   </component>
 </project>
