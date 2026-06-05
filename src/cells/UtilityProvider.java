@@ -21,6 +21,6 @@ public abstract class UtilityProvider extends Cell {
 
     @Override
     public boolean isConnectable() {
-        return true;
+        return false;
     }
 }
