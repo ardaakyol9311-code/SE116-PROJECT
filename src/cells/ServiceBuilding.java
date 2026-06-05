@@ -19,8 +19,5 @@ public abstract class ServiceBuilding extends Cell {
         return radius;
     }
 
-    @Override
-    public boolean isConnectable() {
-        return true;
-    }
+    @Override public boolean isConnectable() { return false; }
 }

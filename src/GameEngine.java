@@ -102,9 +102,9 @@ public class GameEngine {
             if (cell instanceof Zone) {
                 Zone zone = (Zone) cell;
 
-                int demand = calculateUtilityDemand(zone);
-
-                int given = Math.min(demand, remaining);
+                int given = Math.min(
+                        calculateUtilityDemand(zone, provider.getUtilityType()),
+                        remaining);
 
                 if (given > 0) {
                     zone.receiveUtility(provider.getUtilityType(), given);
@@ -137,14 +137,13 @@ public class GameEngine {
         }
     }
 
-    private int calculateUtilityDemand(Zone zone) {
-        int produced = zone.getGeneratedLastTick();
-
-        if (produced <= 0) {
-            return 1;
+    private int calculateUtilityDemand(Zone zone, String type) {
+        if (type.equals("internet") && zone.getName().equals("Industrial")) {
+            return 0;
         }
-
-        return produced;
+        int target = zone.getGeneratedLastTick();
+        if (target <= 0) target = 1;
+        return target - zone.getReceived(type);
     }
 
     private void distributeStoredResources() {

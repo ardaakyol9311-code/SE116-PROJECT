@@ -28,6 +28,7 @@ public abstract class Zone extends Cell {
     public boolean isConnectable() {
         return true;
     }
+
     public void resetTickData() {
         electricity = 0;
         water = 0;
@@ -39,22 +40,31 @@ public abstract class Zone extends Cell {
         health = false;
         education = false;
     }
+
     public int getLevel() {
         return level;
     }
+
     public int getGeneratedLastTick() {
         return generatedLastTick;
     }
+
+    public int getReceived(String type) {
+        if (type.equals("electricity")) return electricity;
+        if (type.equals("water")) return water;
+        if (type.equals("internet")) return internet;
+        return 0;
+    }
+
     public void receiveUtility(String type, int amount) {
-        if(type.equals("electricity")) {
+        if (type.equals("electricity")) {
             electricity += amount;
-        }
-        else if(type.equals("water")) {
+        } else if (type.equals("water")) {
             water += amount;
-        }
-        else if(type.equals("internet")) {
+        } else if (type.equals("internet")) {
             internet += amount;
         }
+
         System.out.println(
                 getName() +
                         " at (" + row + "," + col + ")" +
@@ -62,9 +72,13 @@ public abstract class Zone extends Cell {
                         " " + type
         );
     }
+
     public void receivePopulation(int amount) {
-        if(amount <= 0) return;
+
+        if (amount <= 0) return;
+
         population += amount;
+
         System.out.println(
                 getName() +
                         " at (" + row + "," + col + ")" +
@@ -72,8 +86,10 @@ public abstract class Zone extends Cell {
                         " population"
         );
     }
+
     public void receiveGoods(int amount) {
-        if(amount <= 0) return;
+        if (amount <= 0) return;
+
         goods += amount;
         System.out.println(
                 getName() +
@@ -83,8 +99,10 @@ public abstract class Zone extends Cell {
         );
     }
     public void receiveLifestyle(int amount) {
-        if(amount <= 0) return;
+
+        if (amount <= 0) return;
         lifestyle += amount;
+
         System.out.println(
                 getName() +
                         " at (" + row + "," + col + ")" +
@@ -93,15 +111,15 @@ public abstract class Zone extends Cell {
         );
     }
     public void receiveService(String type) {
-        if(type.equals("security")) {
+
+        if (type.equals("security")) {
             security = true;
-        }
-        else if(type.equals("health")) {
+        } else if (type.equals("health")) {
             health = true;
-        }
-        else if(type.equals("education")) {
+        } else if (type.equals("education")) {
             education = true;
         }
+
         System.out.println(
                 getName() +
                         " at (" + row + "," + col + ")" +
@@ -109,17 +127,17 @@ public abstract class Zone extends Cell {
         );
     }
     protected int baseProduction(int m) {
-        if(level == 0) return 0;
-        if(level == 1) return m;
-        if(level == 2) return 2 * m;
-
+        if (level == 0) return 0;
+        if (level == 1) return m;
+        if (level == 2) return 2 * m;
         return 2 * m;
     }
     protected void levelUp() {
 
-        if(level < 3) {
+        if (level < 3) {
             int oldLevel = level;
             level++;
+
             System.out.println(
                     getName() +
                             " at (" + row + "," + col + ")" +
@@ -129,7 +147,8 @@ public abstract class Zone extends Cell {
         }
     }
     protected void levelDown() {
-        if(level > 0) {
+
+        if (level > 0) {
             int oldLevel = level;
             level--;
             System.out.println(
